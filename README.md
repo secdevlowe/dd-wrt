@@ -21,7 +21,7 @@ My DD-WRT configuration used on my home network. This is documentation for mysel
 
 * Automated [script](https://gist.github.com/secdevlowe/c3ae773b9c2a45d91d7df59ba07b5d35) using ProtonVPN's API for finding optimal VPN server connection.
 * All credit and a huge thank you goes to [collinbarret](https://github.com/collinbarrett) for posting instructions in his [blog](https://collinmbarrett.com/protonvpn-dd-wrt-api-script/).
-* View the [Entware Install & Automation Script.md](https://github.com/secdevlowe/dd-wrt/blob/main/) file for instructions on setting this up.
+* View the [Entware Install & Automation Script.md](https://github.com/secdevlowe/dd-wrt/blob/main/Entware%20Install%20%26%20Automation%20Script.md) file for instructions on setting this up.
 
 # Setup
 
