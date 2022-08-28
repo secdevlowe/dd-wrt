@@ -1,15 +1,16 @@
 # DD-WRT Default Configuration
 
-My DD-WRT configuration used on my home network. This is documentation for myself. I want to make sure I have my preferred configuration documented when I need to update/reset this box. 
+My DD-WRT configuration used on my home network. This is documentation for myself. I want to make sure I have my preferred configuration documented when I need to update/reset this box.
 
 ## Router 
+
 * [Netgear R7600v3](https://www.netgear.com/support/product/R6700v3.aspx).
+* DD-WRT v3.0-r48646 std (04/12/22)
+* Kernel VersionLinux 4.4.302 #5712 SMP Tue Apr 12 04:34:21 +07 2022 armv7l
 
 ## DD-WRT Build
 
-* DD-WRT v3.0-r48646 std (04/12/22)
-* Kernel VersionLinux 4.4.302 #5712 SMP Tue Apr 12 04:34:21 +07 2022 armv7l
-* [Entwawre](https://entware.net/)
+* [v3.0-r47090 std (07/26/21)](https://dd-wrt.com/support/router-database/?model=R6700_v1)
 
 ## 3rd-Party Services
 
@@ -18,8 +19,9 @@ My DD-WRT configuration used on my home network. This is documentation for mysel
 
 ## Optimal ProtonVPN Server Autorun
 
-* Automated [script](https://gist.github.com/secdevlowe/c3ae773b9c2a45d91d7df59ba07b5d35) using ProtonVPN's API for using optimal VPN connection.
+* Automated [script](https://gist.github.com/secdevlowe/c3ae773b9c2a45d91d7df59ba07b5d35) using ProtonVPN's API for finding optimal VPN server connection.
 * All credit and a huge thank you goes to [collinbarret](https://github.com/collinbarrett) for posting instructions in his [blog](https://collinmbarrett.com/protonvpn-dd-wrt-api-script/).
+* View the [Entware Install & Automation Script.md](https://github.com/secdevlowe/dd-wrt/blob/main/) file for instructions on setting this up.
 
 # Setup
 
@@ -42,7 +44,7 @@ My DD-WRT configuration used on my home network. This is documentation for mysel
 
 #### Router IP
 
-__Change default local IP address for (slightly) better network [security](https://routersecurity.org/ipaddresses.php)__
+__Change default local IP address for (slightly) better network [security]:(https://routersecurity.org/ipaddresses.php)__
 __Mirror the local IP address to the gateway IP. This fixed my issue with my Xfinity Xfi Modem injecting DNS via DHCP for my Windows PC DNS dynamic update feature - (trustedsec)[https://www.trustedsec.com/blog/injecting-rogue-dns-records-using-dhcp/] and (netspi):[https://www.trustedsec.com/blog/injecting-rogue-dns-records-using-dhcp/]__
 
 * Local IP Address: 192.168.30.11/24
@@ -84,7 +86,7 @@ __Local DNS should be set to 0.0.0.0 - forcing the nextdns.io__
 
 Change SSID(s), turn on WPA2-PSK, and set a strong password(s) for network authentication.
 
-Use guidance from [here](https://forum.dd-wrt.com/wiki/index.php/QCA_wireless_settings) for additional wireless settings avaliable for Qualcomm Atheros (QCA) 802.11a/b/n/ac/ad routers.
+Use guidance from [here](https://forum.dd-wrt.com/wiki/index.php/QCA_wireless_settings) for additional wireless settings available for Qualcomm Atheros (QCA) 802.11a/b/n/ac/ad routers.
 
 # Services
 
@@ -131,6 +133,7 @@ Configure using the [latest guidance from ProtonVPN](https://protonvpn.com/suppo
 __Additional Config__
 
 ```
+...
 # Additional settings from ProtonVPN Documentation https://protonvpn.com/support/vpn-router-ddwrt/
 tls-client
 remote-cert-tls server
