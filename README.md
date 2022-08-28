@@ -1,6 +1,6 @@
 # DD-WRT Default Configuration
 
-My DD-WRT configuration used on my home network. This is documentation for myself. I want to make sure I have my preferred configuration documented when I need to update/reset this box.
+My DD-WRT configuration used on my home network. This is documentation for myself. I want to make sure I have my preferred configuration documented when I need to update/reset this box. 
 
 ## Router 
 
@@ -14,13 +14,13 @@ My DD-WRT configuration used on my home network. This is documentation for mysel
 
 ## 3rd-Party Services
 
+* [Entwawre]:[https://entware.net/)
 * [ProtonVPN](https://protonvpn.com/)
 * [NextDNS](https://nextdns.io/)
 
 ## Optimal ProtonVPN Server Autorun
 
-* Automated [script](
-* https://gist.github.com/secdevlowe/c3ae773b9c2a45d91d7df59ba07b5d35) using ProtonVPN's API for optimal VPN connection.
+* Automated [script](https://gist.github.com/secdevlowe/c3ae773b9c2a45d91d7df59ba07b5d35) using ProtonVPN's API for using optimal VPN connection.
 * All credit and a huge thank you goes to [collinbarret](https://github.com/collinbarrett) for posting instructions in his [blog](https://collinmbarrett.com/protonvpn-dd-wrt-api-script/).
 
 # Setup
