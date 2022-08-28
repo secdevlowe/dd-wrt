@@ -14,7 +14,7 @@ My DD-WRT configuration used on my home network. This is documentation for mysel
 
 ## 3rd-Party Services
 
-* [Entwawre]:[https://entware.net/)
+* [Entwawre][https://entware.net/)
 * [ProtonVPN](https://protonvpn.com/)
 * [NextDNS](https://nextdns.io/)
 
@@ -44,7 +44,7 @@ My DD-WRT configuration used on my home network. This is documentation for mysel
 
 #### Router IP
 
-__Change default local IP address for (slightly) better network [security]:(https://routersecurity.org/ipaddresses.php)__
+__Change default local IP address for (slightly) better network [security](https://routersecurity.org/ipaddresses.php)__
 __Mirror the local IP address to the gateway IP. This fixed my issue with my Xfinity Xfi Modem injecting DNS via DHCP for my Windows PC DNS dynamic update feature - (trustedsec)[https://www.trustedsec.com/blog/injecting-rogue-dns-records-using-dhcp/] and (netspi):[https://www.trustedsec.com/blog/injecting-rogue-dns-records-using-dhcp/]__
 
 * Local IP Address: 192.168.30.11/24
