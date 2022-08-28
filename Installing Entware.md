@@ -2,13 +2,13 @@ __Again, all credit and a huge thank you goes to [collinbarret](https://github.c
 
 # Entware
 
-Refer to the DD-WRT documentation [Installing Entware]:(https://wiki.dd-wrt.com/wiki/index.php/Installing_Entware) for additional help on the steps below.
+Refer to the DD-WRT documentation [Installing Entware](https://wiki.dd-wrt.com/wiki/index.php/Installing_Entware) for additional help on the steps below.
 
 ## Preparation
 
 1. Log in to the router's GUI, go to the USB page (Services - USB), Make sure Core USB Support, USB Storage and Automatic Drive Mount are all enabled. If one or more are not, enable them and click apply.
 2. On your computer plug in the USB stick or harddrive, reformat the USB stick or harddrive using a program like Partition Wizard (Windows) or GParted (Linux). Make sure the format of the drive is ext2 for a USB stick, or ext3 or NTFS if it is a harddrive, Primary, not Logical. Label should be Optware if you want it to mount automatically.
-3. (Optional) Install an [ext driver on Windows]:(http://www.ext2fsd.com/), helpful for troubleshooting.
+3. (Optional) Install an [ext driver on Windows](http://www.ext2fsd.com/), helpful for troubleshooting.
 4. Determine the architecture of the router you are using.
     * Check the Router Status page in the webUI
     > or
