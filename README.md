@@ -14,7 +14,7 @@ My DD-WRT configuration used on my home network. This is documentation for mysel
 
 ## 3rd-Party Services
 
-* [Entwawre][https://entware.net/)
+* [Entwawre](https://entware.net/)
 * [ProtonVPN](https://protonvpn.com/)
 * [NextDNS](https://nextdns.io/)
 
