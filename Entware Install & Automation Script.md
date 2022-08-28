@@ -1,4 +1,4 @@
-__Again, all credit and a huge thank you goes to [collinbarret](https://github.com/collinbarrett) for posting instructions in his [blog](https://collinmbarrett.com/protonvpn-dd-wrt-api-script/).__
+__All credit and a huge thank you goes to [collinbarret](https://github.com/collinbarrett) for posting instructions in his [blog](https://collinmbarrett.com/protonvpn-dd-wrt-api-script/).__
 
 # Entware
 
@@ -8,13 +8,11 @@ Refer to the DD-WRT documentation [Installing Entware](https://wiki.dd-wrt.com/w
 
 1. Log in to the router's GUI, go to the USB page (Services - USB), Make sure Core USB Support, USB Storage and Automatic Drive Mount are all enabled. If one or more are not, enable them and click apply.
 2. On your computer plug in the USB stick or harddrive, reformat the USB stick or harddrive using a program like Partition Wizard (Windows) or GParted (Linux). Make sure the format of the drive is ext2 for a USB stick, or ext3 or NTFS if it is a harddrive, Primary, not Logical. Label should be Optware if you want it to mount automatically.
-3. (Optional) Install an [ext driver on Windows](http://www.ext2fsd.com/), helpful for troubleshooting.
+3. (Optional) Install an [ext driver on Windows]:(http://www.ext2fsd.com/), helpful for troubleshooting.
 4. Determine the architecture of the router you are using.
-    * Check the Router Status page in the webUI
-    > or
-    * via telnet or ssh issue the command 'uname -a'
+    * Check the Router Status page in the webUI ...or... using telnet or ssh issue the command `uname -a`
 5. Make a note of this for later. If you can't determine the architecture to use, ask in the forums.
-    _Note_: if the router is using a Linux 4.X kernel, Entware-3X may not work.
+    _Note: if the router is using a Linux 4.X kernel, Entware-3X may not work._
 
 ## Installation
 
@@ -26,12 +24,12 @@ Refer to the DD-WRT documentation [Installing Entware](https://wiki.dd-wrt.com/w
 # https://wiki.dd-wrt.com/wiki/index.php/Installing_Entware
 sleep 25
 /opt/etc/init.d/rc.unslung start
-```
+``` 
 
-   * NOTE: if you get nslookup: can't resolve 'bin.entware.net' then most likely your /etc/resolv.conf file has only a local nameserver entry (nameserver 192.168.1.1). Edit your /etc/resolv.conf file insert nameserver 8.8.8.8 save the file, and repeat your wget
-  * The third command from above sh generic.sh runs the install script which downloaded several files from the internet and set up Entware. It will most likely show several packages that have no valid architecture, just ignore them. These will show up when any opkg command is run.
+_NOTE_: if you get nslookup: can't resolve 'bin.entware.net' then most likely your /etc/resolv.conf file has only a local nameserver entry (nameserver 192.168.1.1). Edit your /etc/resolv.conf file insert nameserver 8.8.8.8 save the file, and repeat your wget. 
+The third command from above sh generic.sh runs the install script which downloaded several files from the internet and set up Entware. It will most likely show several packages that have no valid architecture, just ignore them. These will show up when any opkg command is run.
 
-4. When installation is complete, run an update:
+1. When installation is complete, run an update:
 
 ```sh
 opkg update (click enter)
@@ -47,7 +45,7 @@ sleep 10
 
 __Installation of Entware is now complete__
 
-### Install jq
+## Install jq
 
 `opkg install jq`
 
@@ -62,7 +60,7 @@ This may require you to add  `-k (--insecure)` for permissions to run.
 # jq
 
 ```sh
-echo "$LOGICALS" | jq '.LogicalServers | map(select(.Status == 1 and .Tier == 2 and .Features == 8 and (.City | (contains("Atlanta") or contains("Dallas") or contains("Chicago"))))) | [sort_by(.Score, .Load)[]][0] | .Servers[0].EntryIP'
+echo "$LOGICALS" | jq '.LogicalServers | map(select(.Status == 1 and .Tier == 2 and .Features == 8 and (.City | (contains("Denver") or contains("Dallas") or contains("Chicago"))))) | [sort_by(.Score, .Load)[]][0] | .Servers[0].EntryIP'
 ```
 
 # Shell Script
@@ -124,4 +122,4 @@ dd-wrt login > Administration > Management > Cron
 
 # Startup
 
-WDS/Connection Watchdog is enabled in dd-wrt. Take a copy of the VPN refresh script and change the file extension from '.sh' to '.wanup'. Then move it under the '/jffs/etc/config/' directory: '/jffs/etc/config/vpn-refresh.wanup' .
+WDS/Connection Watchdog is enabled in dd-wrt. Take a copy of the VPN refresh script and change the file extension from '.sh' to '.wanup'. Then move it under the '/jffs/etc/config/' directory: '/jffs/etc/config/vpn-refresh.wanup'.
