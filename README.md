@@ -7,14 +7,13 @@ My DD-WRT configuration used on my home network. This is documentation for mysel
 * [Netgear R7600v3](https://www.netgear.com/support/product/R6700v3.aspx).
 * DD-WRT v3.0-r48646 std (04/12/22)
 * Kernel VersionLinux 4.4.302 #5712 SMP Tue Apr 12 04:34:21 +07 2022 armv7l
+* [Entwawre](https://entware.net/)
 
 ## DD-WRT Build
 
 * [v3.0-r47090 std (07/26/21)](https://dd-wrt.com/support/router-database/?model=R6700_v1)
 
 ## 3rd-Party Services
-
-* [Entwawre](https://entware.net/)
 * [ProtonVPN](https://protonvpn.com/)
 * [NextDNS](https://nextdns.io/)
 
@@ -133,7 +132,6 @@ Configure using the [latest guidance from ProtonVPN](https://protonvpn.com/suppo
 __Additional Config__
 
 ```
-...
 # Additional settings from ProtonVPN Documentation https://protonvpn.com/support/vpn-router-ddwrt/
 tls-client
 remote-cert-tls server
