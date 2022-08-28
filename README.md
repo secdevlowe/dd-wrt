@@ -5,6 +5,8 @@ My DD-WRT configuration used on my home network. This is documentation for mysel
 ## Router 
 
 * [Netgear R7600v3](https://www.netgear.com/support/product/R6700v3.aspx).
+* DD-WRT v3.0-r48646 std (04/12/22)
+* Kernel VersionLinux 4.4.302 #5712 SMP Tue Apr 12 04:34:21 +07 2022 armv7l
 
 ## DD-WRT Build
 
