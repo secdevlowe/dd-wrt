@@ -2,7 +2,9 @@
 
 My DD-WRT configuration used on my home network. This is documentation for myself. I want to make sure I have my preferred configuration documented when I need to update/reset this box.
 
-## Router 
+Thank you to [Collin Barrett](https://github.com/collinbarrett) for the work and detailed information provided via [collinbarrett/dd-wrt](https://github.com/collinbarrett/dd-wrt) and the [DD-WRT: Connecting to the Optimal ProtonVPN Server with OpenVPN](https://collinmbarrett.com/protonvpn-d-wrt-api-script/) blog posted linked within. This dd-wrt project was created from using [collinbarrett/dd-wrt](https://github.com/collinbarrett/dd-wrt) as a template/reference/inspiration. The current altered settings/configuration present in this project will change over time when necessary to home networking needs. 
+
+## Router
 
 * [Netgear R7600v3](https://www.netgear.com/support/product/R6700v3.aspx).
 * DD-WRT v3.0-r48646 std (04/12/22)
@@ -20,7 +22,7 @@ My DD-WRT configuration used on my home network. This is documentation for mysel
 ## Optimal ProtonVPN Server Autorun
 
 * Automated [script](https://gist.github.com/secdevlowe/c3ae773b9c2a45d91d7df59ba07b5d35) using ProtonVPN's API for finding optimal VPN server connection.
-* All credit and a huge thank you goes to [collinbarret](https://github.com/collinbarrett) for posting instructions in his [blog](https://collinmbarrett.com/protonvpn-dd-wrt-api-script/).
+* Credit and a huge thank you goes to [collinbarret](https://github.com/collinbarrett) for posting instructions in his [blog](https://collinmbarrett.com/protonvpn-dd-wrt-api-script/).
 * View the [Entware Install & Automation Script.md](https://github.com/secdevlowe/dd-wrt/blob/main/Entware%20Install%20%26%20Automation%20Script.md) file for instructions on setting this up.
 
 # Setup
