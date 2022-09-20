@@ -82,6 +82,23 @@ __Local DNS should be set to 0.0.0.0 - forcing the nextdns.io__
 * Query DNS in Strict Order: `☑`
 * Maximum Cached Entries: `10000`
 
+## Switch Config
+
+### Virtual Local Area Network (VLAN)
+
+| VLAN   		     |  WAN  |  1     |  2    |  3    |  4   |
+|----------------|-------|--------|-------|-------|------|
+| 0      		     | 🔲    | 🔲    | 🔲   | 🔲    |  🔲  |
+| 1      		     | 🔲    | ☑     | 🔲   | 🔲    |  🔲  |
+| 2      		     | ☑     | 🔲    | 🔲   | 🔲    |  🔲  |
+| 3      		     | 🔲    | 🔲    | ☑    | ☑     |  ☑   |
+| Tagged 		     | 🔲    | 🔲    | 🔲   | 🔲    |  🔲  |
+| Auto-Negotiate | ☑     | ☑     | ☑    | ☑     |  ☑   |
+| Gigabit		     | ☑     | ☑     | ☑    | ☑    |  ☑    |
+| Full Speed 	   | ☑     | ☑     | ☑    | ☑    |  ☑    |
+| Full Duplex	   | ☑     | ☑     | ☑    | ☑    |  ☑    |
+| Enabled 		   | ☑     | ☑     | ☑    | ☑    |  ☑    |
+
 # Wireless
 
 ## Basic Settings
