@@ -4,6 +4,8 @@ My DD-WRT configuration used on my home network. This is documentation for mysel
 
 Thank you to [Collin Barrett](https://github.com/collinbarrett) for the work and detailed information provided via [collinbarrett/dd-wrt](https://github.com/collinbarrett/dd-wrt) and the [DD-WRT: Connecting to the Optimal ProtonVPN Server with OpenVPN](https://collinmbarrett.com/protonvpn-d-wrt-api-script/) blog posted linked within. This dd-wrt project was created from using [collinbarrett/dd-wrt](https://github.com/collinbarrett/dd-wrt) as a template/reference/inspiration. The current altered settings/configuration present in this project will change over time when necessary to home networking needs. 
 
+Note that the Proton API service is no longer up see [here](https://protonmail.uservoice.com/forums/932836-proton-vpn/suggestions/49774472-re-enable-access-to-api). Therefore the automation script for changing VPN servers will no longer work. 
+
 ## Router
 
 * [Netgear R7600v3](https://www.netgear.com/support/product/R6700v3.aspx).
